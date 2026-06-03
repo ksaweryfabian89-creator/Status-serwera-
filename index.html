@@ -1,17 +1,16 @@
-```html
 <!DOCTYPE html>
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Status Serwera - BlockZone.PL</title>
+<title>Status - BlockZone.PL</title>
 
 <style>
 body{
     margin:0;
-    font-family:Arial,sans-serif;
-    background:linear-gradient(135deg,#050505,#180000,#050505);
+    background:linear-gradient(135deg,#050000,#260000,#050000);
     color:white;
+    font-family:Arial,sans-serif;
     text-align:center;
 }
 
@@ -22,60 +21,58 @@ body{
 }
 
 .logo{
-    font-size:70px;
+    font-size:64px;
     font-weight:bold;
     color:#ff2222;
-    text-shadow:0 0 25px #ff0000;
+    text-shadow:0 0 25px red;
     margin-bottom:20px;
 }
 
-.subtitle{
-    color:#cccccc;
-    font-size:22px;
-    margin-bottom:40px;
-}
-
 .status-box{
-    background:#120000;
+    background:#140000;
     border:2px solid #ff2222;
     border-radius:20px;
     padding:30px;
-    margin-bottom:30px;
     box-shadow:0 0 35px rgba(255,0,0,.45);
+    margin-bottom:30px;
 }
 
 .status-title{
-    font-size:34px;
-    color:#ff3333;
+    font-size:32px;
+    color:#ff4444;
     font-weight:bold;
-    margin-bottom:15px;
 }
 
 .ip{
     font-size:28px;
-    color:white;
     font-weight:bold;
+    margin-top:15px;
 }
 
 .info{
-    margin-top:15px;
-    color:#cccccc;
+    color:#ccc;
     font-size:18px;
+    margin-top:12px;
 }
 
 .mclist-widget{
-    max-width:800px;
-    margin:auto;
+    max-width:850px;
+    margin:30px auto;
     background:white;
-    padding:10px;
-    border-radius:15px;
-    box-shadow:0 0 30px rgba(255,0,0,.5);
+    padding:15px;
+    border-radius:18px;
+    box-shadow:0 0 35px rgba(255,0,0,.6);
+}
+
+.mclist-widget iframe{
+    width:100%;
+    height:180px;
+    border:0;
 }
 
 .footer{
     margin-top:50px;
     color:#777;
-    font-size:15px;
 }
 </style>
 </head>
@@ -83,46 +80,23 @@ body{
 
 <div class="container">
 
-<div class="logo">
-BLOCKZONE.PL
-</div>
-
-<div class="subtitle">
-Oficjalny status serwera Minecraft
-</div>
+<div class="logo">BLOCKZONE.PL</div>
 
 <div class="status-box">
-    <div class="status-title">
-        🟢 STATUS SERWERA
-    </div>
-
-    <div class="ip">
-        blockzone.6mc.pl
-    </div>
-
-    <div class="info">
-        Aktualna liczba graczy, wersja oraz status online wyświetlane są poniżej.
-    </div>
+    <div class="status-title">STATUS SERWERA</div>
+    <div class="ip">blockzone.6mc.pl</div>
+    <div class="info">Status online/offline i liczba graczy poniżej:</div>
 </div>
 
 <div class="mclist-widget">
-<iframe
-src="https://www.mclist.pl/widget/blockzone.6mc.pl"
-width="800"
-height="110"
-allowtransparency="true"
-frameborder="0"
-scrolling="no"
-style="overflow:hidden;width:100%;">
-</iframe>
+<iframe src="https://www.mclist.pl/widget/blockzone.6mc.pl"></iframe>
 </div>
 
 <div class="footer">
-© 2026 BlockZone.PL - Wszelkie prawa zastrzeżone.
+© 2026 BlockZone.PL
 </div>
 
 </div>
 
 </body>
 </html>
-```
