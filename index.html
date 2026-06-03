@@ -1,83 +1,81 @@
+```html
 <!DOCTYPE html>
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kontakt - BlockZone.PL</title>
+<title>Status Serwera - BlockZone.PL</title>
 
 <style>
 body{
     margin:0;
-    background:linear-gradient(135deg,#0a0000,#250000,#0a0000);
-    color:white;
     font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#050505,#180000,#050505);
+    color:white;
+    text-align:center;
 }
 
 .container{
     max-width:1000px;
     margin:auto;
     padding:50px 20px;
-    text-align:center;
 }
 
 .logo{
-    font-size:60px;
+    font-size:70px;
     font-weight:bold;
     color:#ff2222;
-    text-shadow:0 0 20px red;
+    text-shadow:0 0 25px #ff0000;
+    margin-bottom:20px;
+}
+
+.subtitle{
+    color:#cccccc;
+    font-size:22px;
+    margin-bottom:40px;
+}
+
+.status-box{
+    background:#120000;
+    border:2px solid #ff2222;
+    border-radius:20px;
+    padding:30px;
     margin-bottom:30px;
+    box-shadow:0 0 35px rgba(255,0,0,.45);
+}
+
+.status-title{
+    font-size:34px;
+    color:#ff3333;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.ip{
+    font-size:28px;
+    color:white;
+    font-weight:bold;
+}
+
+.info{
+    margin-top:15px;
+    color:#cccccc;
+    font-size:18px;
 }
 
 .mclist-widget{
-    margin:30px auto;
     max-width:800px;
-    overflow:hidden;
+    margin:auto;
+    background:white;
+    padding:10px;
     border-radius:15px;
-    box-shadow:0 0 25px rgba(255,0,0,0.35);
-}
-
-.mclist-widget iframe{
-    width:100%;
-}
-
-.card{
-    background:#150000;
-    border:2px solid #ff2222;
-    border-radius:20px;
-    padding:40px;
-    box-shadow:0 0 30px rgba(255,0,0,.4);
-}
-
-h1{
-    color:#ffffff;
-}
-
-p{
-    color:#cccccc;
-    font-size:20px;
-}
-
-.discord{
-    display:inline-block;
-    margin-top:30px;
-    padding:18px 40px;
-    background:#ff2222;
-    color:white;
-    text-decoration:none;
-    font-size:24px;
-    font-weight:bold;
-    border-radius:15px;
-    transition:0.3s;
-}
-
-.discord:hover{
-    background:#ff4444;
-    transform:scale(1.05);
+    box-shadow:0 0 30px rgba(255,0,0,.5);
 }
 
 .footer{
     margin-top:50px;
-    color:#888;
+    color:#777;
+    font-size:15px;
 }
 </style>
 </head>
@@ -89,31 +87,34 @@ p{
 BLOCKZONE.PL
 </div>
 
+<div class="subtitle">
+Oficjalny status serwera Minecraft
+</div>
+
+<div class="status-box">
+    <div class="status-title">
+        🟢 STATUS SERWERA
+    </div>
+
+    <div class="ip">
+        blockzone.6mc.pl
+    </div>
+
+    <div class="info">
+        Aktualna liczba graczy, wersja oraz status online wyświetlane są poniżej.
+    </div>
+</div>
+
 <div class="mclist-widget">
-<iframe src="https://www.mclist.pl/widget/blockzone.6mc.pl"
+<iframe
+src="https://www.mclist.pl/widget/blockzone.6mc.pl"
 width="800"
 height="110"
 allowtransparency="true"
 frameborder="0"
 scrolling="no"
-style="overflow:hidden;">
+style="overflow:hidden;width:100%;">
 </iframe>
-</div>
-
-<div class="card">
-<h1>Kontakt / Discord</h1>
-
-<p>
-Dołącz do naszego Discorda i bądź na bieżąco z aktualizacjami,
-eventami oraz konkursami na serwerze BlockZone.PL.
-</p>
-
-<a class="discord"
-href="https://discord.gg/gYjffRNaAv"
-target="_blank">
-DOŁĄCZ DO DISCORDA
-</a>
-
 </div>
 
 <div class="footer">
@@ -124,3 +125,4 @@ DOŁĄCZ DO DISCORDA
 
 </body>
 </html>
+```
